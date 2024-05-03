@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Outfit", "Young Serif", sans-serif;
+}
+
+:root {
+    --heading-l: 2.5rem;
+    --heading-m: 1.75rem;
+    --fs-m: 1.25rem;
+    --fs-s: 1rem;
+
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --snow: #FFF7FB;
+    --dark-raspberry: #7A284E;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+ul,
+ol,
+li,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+}
+
+body {
+    background: 
+    linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url(../design/mobile-design.jpg),
+    top center;
+}
+
+.recipe-img {
+    height: 171px;
+    background-size: cover;
+    background-image: url(./images/image-omelette.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.recipe-content {
+    padding: 40px 32px;
+}
+
+.title {
+    font-family: "Young Serif";
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 1;
+}
+
+.text {
+    margin-top: 24px;
+    color: var(--wenge-brown);
+    line-height: 1.5;
+}
+
+.recipe-info-block {
+    background-color: var(--snow);
+    padding: 24px;
+    margin-top: 32px;
+    border-radius: 12px;
+}
+
+.recipe-info-title {
+    font-size: var(--fs-m);
+    color: var(--dark-raspberry);
+    font-weight: 700;
+}
+
+.attribution {
+    display: none;
+}
+
+@media screen and (min-width: 736px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--eggshell);
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 736px;
+        padding: 40px;
+        margin: 123px 0;
+        border-radius: 24px;
+    }
+
+    .recipe-img {
+        height: 300px;
+        border-radius: 12px;
+    }
+}
