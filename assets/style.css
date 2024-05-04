@@ -19,6 +19,7 @@
     --dark-charcoal: hsl(24, 5%, 18%);
     --snow: #FFF7FB;
     --dark-raspberry: #7A284E;
+    --brandy-red: #854632;
 }
 
 html,
@@ -41,6 +42,36 @@ body {
     linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url(../design/mobile-design.jpg),
     top center;
+}
+
+.subtitle {
+    color: var(--brandy-red);
+    font-family: "Young Serif";
+    font-size: var(--heading-m);
+    margin-bottom: 18px;
+}
+
+li {
+    color: var(--wenge-brown);
+    padding-left: 40px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 8px;
+    line-height: 1.5rem;
+}
+
+li::before {
+    content: "•";
+    color: var(--dark-raspberry);
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+}
+
+li:last-child {
+    margin-bottom: 0;
 }
 
 .recipe-img {
@@ -69,9 +100,9 @@ body {
 }
 
 .recipe-info-block {
-    background-color: var(--snow);
+    /*background-color: var(--snow);*/
     padding: 24px;
-    margin-top: 32px;
+    margin: 28px 0;
     border-radius: 12px;
 }
 
@@ -79,7 +110,10 @@ body {
     font-size: var(--fs-m);
     color: var(--dark-raspberry);
     font-weight: 700;
+    margin-bottom: 16px;
 }
+
+
 
 .attribution {
     display: none;
