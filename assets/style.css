@@ -20,6 +20,7 @@
     --snow: #FFF7FB;
     --dark-raspberry: #7A284E;
     --brandy-red: #854632;
+    --white-coffee: #E3DDD7;
 }
 
 html,
@@ -34,7 +35,6 @@ p,
 img {
     margin: 0;
     padding: 0;
-    list-style: inside;
 }
 
 body {
@@ -42,32 +42,51 @@ body {
     linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url(../design/mobile-design.jpg),
     top center;
+    color: var(--wenge-brown);
+    line-height: 1.5rem;
+}
+
+hr {
+    margin: 32px 0;
+    border-bottom-width: 0;
 }
 
 .subtitle {
     color: var(--brandy-red);
     font-family: "Young Serif";
     font-size: var(--heading-m);
-    margin-bottom: 18px;
+    margin-bottom: 24px;
+    line-height: 1;
 }
 
-li {
+.recipe-info-title {
+    line-height: 1;
+}
+
+ul {
+    padding-left: 6px;
+}
+
+ul li {
     color: var(--wenge-brown);
-    padding-left: 40px;
+    padding-left: 33px;
     list-style: none;
     position: relative;
     margin-bottom: 8px;
-    line-height: 1.5rem;
 }
 
-li::before {
+ul li::before {
     content: "•";
     color: var(--dark-raspberry);
     font-size: 1.4rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 7px;
+    left: 0;
+}
+
+.ingredients li::before {
+    color: var(--brandy-red);
 }
 
 li:last-child {
@@ -102,7 +121,7 @@ li:last-child {
 .recipe-info-block {
     /*background-color: var(--snow);*/
     padding: 24px;
-    margin: 28px 0;
+    margin: 32px 0;
     border-radius: 12px;
 }
 
@@ -113,7 +132,46 @@ li:last-child {
     margin-bottom: 16px;
 }
 
+.instructions li {
+    padding-left: 16px;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
 
+.instructions li::marker {
+    color: var(--brandy-red);
+    font-weight: 700;
+}
+
+.nutrition .text {
+    margin-bottom: 22px;
+}
+
+.nutrition table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutrition tbody tr {
+    border-bottom: 1px solid red;
+}
+
+.nutrition tbody tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition th {
+    padding-top: 0;
+    padding-bottom: 12px;
+}
+
+.nutrition td {
+    min-width: 115.5px;
+    text-align: left;
+    padding: 12px 0;
+}
+
+.nutrition 
 
 .attribution {
     display: none;
