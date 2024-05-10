@@ -189,10 +189,6 @@ li:last-child {
 @media screen and (min-width: 736px) {
 
     body {
-        background:
-        linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-        url(../design/desktop-design.jpg),
-        center left no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -220,6 +216,7 @@ li:last-child {
 
     .title {
         padding-top: 42px;
+        font-size: var(--heading-l);
     }
 
     .recipe-info-title {
