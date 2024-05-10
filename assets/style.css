@@ -56,10 +56,6 @@ hr {
     font-weight: 400;
 }
 
-.recipe-info-title {
-    line-height: 1;
-}
-
 ul {
     padding-left: 6px;
 }
@@ -104,6 +100,7 @@ li:last-child {
 
 .title {
     font-family: "Young Serif";
+    color: #1E1E1E;
     font-weight: 400;
     font-size: 2.25rem;
     line-height: 1;
@@ -125,8 +122,9 @@ li:last-child {
 .recipe-info-title {
     font-size: var(--fs-m);
     color: var(--dark-raspberry);
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 16px;
+    line-height: 1;
 }
 
 .instructions li {
