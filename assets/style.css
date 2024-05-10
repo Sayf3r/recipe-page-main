@@ -38,10 +38,6 @@ img {
 }
 
 body {
-    background: 
-    linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url(../design/mobile-design.jpg),
-    top center;
     color: var(--wenge-brown);
     line-height: 1.5rem;
 }
@@ -119,7 +115,7 @@ li:last-child {
 }
 
 .recipe-info-block {
-    /*background-color: var(--snow);*/
+    background-color: var(--snow);
     padding: 24px;
     margin: 32px 0;
     border-radius: 12px;
@@ -148,30 +144,44 @@ li:last-child {
 }
 
 .nutrition table {
-    border-collapse: collapse;
     width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    border-collapse: collapse;
 }
 
 .nutrition tbody tr {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--white-coffee);
 }
 
 .nutrition tbody tr:last-child {
     border-bottom: none;
 }
 
-.nutrition th {
-    padding-top: 0;
+.nutrition th,
+.nutrition td {
     padding-bottom: 12px;
+    width: 50%;
+}
+
+.nutrition th:first-child,
+.nutrition td:first-child {
+    padding-left: 32px;
+    padding-right: 8px;
+    font-weight: 400;
+}
+
+.nutrition th:last-child,
+.nutrition td:last-child {
+    padding-right: 32px;
+    padding-left: 8px;
+    font-weight: 700;
+    color: var(--brandy-red);
 }
 
 .nutrition td {
-    min-width: 115.5px;
-    text-align: left;
-    padding: 12px 0;
+    padding-top: 12px;
 }
-
-.nutrition 
 
 .attribution {
     display: none;
@@ -200,4 +210,9 @@ li:last-child {
         height: 300px;
         border-radius: 12px;
     }
+
+    .recipe-content {
+        padding-bottom: 0;
+    }
+
 }
