@@ -53,6 +53,7 @@ hr {
     font-size: var(--heading-m);
     margin-bottom: 24px;
     line-height: 1;
+    font-weight: 400;
 }
 
 .recipe-info-title {
@@ -190,6 +191,10 @@ li:last-child {
 @media screen and (min-width: 736px) {
 
     body {
+        background:
+        linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url(../design/desktop-design.jpg),
+        center left no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -212,7 +217,15 @@ li:last-child {
     }
 
     .recipe-content {
-        padding-bottom: 0;
+        padding: 0;
+    }
+
+    .title {
+        padding-top: 42px;
+    }
+
+    .recipe-info-title {
+        line-height: 1.5;
     }
 
 }
